@@ -1,0 +1,22 @@
+div {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+body {
+    text-align: center;
+    background-color: royalblue;
+}
+
+h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 40pt;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-family: 'Raleway Dots', cursive;
+    font-size: 16pt;
+    margin-top: 0%;
+}

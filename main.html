@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fantasy Name Generator
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Raleway+Dots&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js'></script>
+        <script src='scripts.js'></script>
+        <h1>
+            Fantasy Name Generator
+        </h1>
+        <h2>
+            RNN trained on the names from J. R. R. Tolkien books.
+        </h2>
+        <div> <!--app-->
+            <div> <!--text line-->
+                <input type="text" id='name' name='name'>
+            </div>
+            <div> <!--buttons-->
+                <button id='go' onclick="generate()" >Generate new name</button>
+                <button id='copy' onclick="copy()" >Copy</button>
+            </div>
+        </div>
+        <div> <!--Credits footer-->
+
+        </div>
+    </body>
+</html>
