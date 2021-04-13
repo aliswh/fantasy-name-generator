@@ -7,21 +7,68 @@ div {
 body {
     text-align: center;
     background-color: royalblue;
+    background-image: url(https://github.com/aliswh/fantasy-name-generator/blob/main/data/background.jpg?raw=true);
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
 }
 
 h1 {
     font-family: 'Italianno', cursive;
     font-size: 40pt;
     margin-bottom: 0%;
+    color: #4c2f16;
 }
 
 h2 {
     font-family: 'Raleway Dots', cursive;
     font-size: 16pt;
     margin-top: 0%;
+    color: #4c2f16;
 }
 
 .container {
-    background-color: lightgoldenrodyellow;
+    color: black;
+    background-color: lavenderblush;
     max-width: 600px;
+    border: 0px solid;
+    border-radius: 25px;
+}
+
+button {
+    font-family: 'Raleway Dots', cursive;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10pt 15pt;
+    border: 0px solid;
+    border-radius: 25px;
+    color: white;
+    background-color: #7c4f64;
+    transition-duration: 0.5s;
+    outline: none;
+}
+
+input {
+    border: 0px solid;
+    border-radius: 25px;
+    padding: 10pt 15pt;
+    width: 60%;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: black;
+    text-align: center;
+    padding: 0%;
+  }
+
+.footnote {
+    font-family: 'Arial', cursive;
+    color: lavenderblush;
+    font-size: 12pt;
 }

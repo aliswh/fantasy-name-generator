@@ -40,6 +40,13 @@
                 alert("Name copied!");
             };
         </script>
+            
+        <script>
+            function notWorking(){
+                document.getElementById("name").value = 'WIP!'
+            };
+        </script>
+
         <div class='container'>
             <h1>
                 Fantasy Name Generator
@@ -52,13 +59,13 @@
                     <input type="text" id='name' name='name' value="">
                 </div>
                 <div> <!--buttons-->
-                    <button id='go' onclick="showName()" >Generate new name</button>
+                    <button id='go' onclick="notWorking()" >Generate new name</button>
                     <button id='copy' onclick="copy()" >Copy</button>
                 </div>
             </div>
         </div>
-        <div> <!--Credits footer-->
-
+        <div class="footer"> <!--Credits footer-->
+            <p class="footnote">I'm not working because my dev doesn't know how to use Flask (yet!), but you can check my code on her GitHub page.</p>
         </div>
     </body>
 </html>
