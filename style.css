@@ -20,3 +20,8 @@ h2 {
     font-size: 16pt;
     margin-top: 0%;
 }
+
+.container {
+    background-color: lightgoldenrodyellow;
+    max-width: 600px;
+}

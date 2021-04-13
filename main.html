@@ -8,27 +8,53 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Raleway+Dots&display=swap" rel="stylesheet">
         
-        <script src="/brython.js"></script>
-        <script src='scripts.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
+
     </head>
     <body onload="brython()">
-        <script type="text/python" src="generate_name.py"></script>
+        
         <script>
-            generate();
+            function showName() {
+                alert("Hello");
+                    $.ajax({
+                            url: "/generate_name.py",
+                            success: function(response){
+                            alert("Success");
+                            return response;
+                            
+                            document.getElementById("name").value = response
+                            }
+                    });
+                alert("World");
+            }
         </script>
-        <h1>
-            Fantasy Name Generator
-        </h1>
-        <h2>
-            RNN trained on the names from J. R. R. Tolkien books.
-        </h2>
-        <div> <!--app-->
-            <div> <!--text line-->
-                <input type="text" id='name' name='name'>
-            </div>
-            <div> <!--buttons-->
-                <button id='go' onclick="generate()" >Generate new name</button>
-                <button id='copy' onclick="copy()" >Copy</button>
+
+        <script>
+            function copy(){
+                var text = document.getElementById('name');
+                text.select();
+                text.setSelectionRange(0, 99999); /* For mobile devices */
+                document.execCommand("copy");
+                /* Alert the copied text */
+                alert("Name copied!");
+            };
+        </script>
+        <div class='container'>
+            <h1>
+                Fantasy Name Generator
+            </h1>
+            <h2>
+                RNN trained on the names from J. R. R. Tolkien books.
+            </h2>
+            <div> <!--app-->
+                <div> <!--text line-->
+                    <input type="text" id='name' name='name' value="">
+                </div>
+                <div> <!--buttons-->
+                    <button id='go' onclick="showName()" >Generate new name</button>
+                    <button id='copy' onclick="copy()" >Copy</button>
+                </div>
             </div>
         </div>
         <div> <!--Credits footer-->
