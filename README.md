@@ -1,5 +1,5 @@
 # Fantasy Name Generator
- RNN trained on database of Tolkien's characters names. Web page [here].()
+ RNN trained on database of Tolkien's characters names. Web page [here]().
 
 ## Objective:
 * ~~Build a model~~
